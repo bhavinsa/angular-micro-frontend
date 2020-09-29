@@ -16,7 +16,7 @@ export class AppComponent {
     }
   }
 
-  
+
   login() {
     console.log('Login process!!');
     let randomNum = Math.random() + 100;

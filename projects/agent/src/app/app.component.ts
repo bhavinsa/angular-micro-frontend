@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,17 +7,18 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'agent';
-
-  ngOnInit(){
-    let token =  localStorage.getItem('token');
-    if(token){
+  constructor(private router: Router) { }
+  ngOnInit() {
+    let token = localStorage.getItem('token');
+    if (token) {
       console.log('verify the token with Backend');
-    }else{
+      this.router.navigate(['/home']);
+    } else {
       window.location.replace('http://localhost:5000');
     }
   }
 
-  logout(){
+  logout() {
     localStorage.setItem('token', '');
     window.location.replace('http://localhost:5000');
   }
