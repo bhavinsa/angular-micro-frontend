@@ -1,0 +1,8 @@
+form {
+        margin-top: 15%;
+        margin-left: 15%;
+        border: 1px #dee2e6 dotted;
+        padding: 15px;
+        border-radius: 10px 20px;
+        box-sizing: content-box;
+}

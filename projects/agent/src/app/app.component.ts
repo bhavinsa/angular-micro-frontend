@@ -22,4 +22,14 @@ export class AppComponent {
     localStorage.setItem('token', '');
     window.location.replace('http://localhost:5000');
   }
+
+  product(){
+    window.location.replace('http://localhost:5000/customer/#/product');
+    // this.router.navigate(['/customer']);
+  }
+
+  productDetail(){
+    window.location.replace('http://localhost:5000/customer/#/product-details');
+    // this.router.navigate(['/customer']);
+  }
 }

@@ -8,15 +8,24 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-                <a routerLink="home">Home</a>
+                <a routerLink="home">MF-1 Home</a>
             </li> &nbsp;&nbsp;
             <li class="nav-item">
-                <a routerLink="about">About</a>
+                <a routerLink="about">MF-1 About</a>
+            </li> &nbsp;&nbsp;
+
+            <li class="nav-item">
+                <a (click)="product()">MF-2 Product</a>
+            </li> &nbsp;&nbsp;
+
+            <li class="nav-item">
+                <a (click)="productDetail()">MF-2 Product Detail</a>
             </li> &nbsp;&nbsp;
 
             <li class="nav-item">
                 <a (click)="logout()">Logout</a>
-            </li>
+            </li> &nbsp;&nbsp;
+
 
         </ul>
 
